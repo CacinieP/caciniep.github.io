@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#f4f0e8" />
+    <link rel="icon" href="./favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="./styles.css" />
+    <title>404 — Context Lost</title>
+    <style>
+      .lost {
+        display: grid;
+        width: min(900px, calc(100% - 3rem));
+        min-height: 100svh;
+        margin: auto;
+        place-content: center;
+      }
+      .lost-panel {
+        padding: clamp(2rem, 8vw, 6rem);
+        border: 1px solid var(--ink);
+        background: var(--aqua-soft);
+        box-shadow: 14px 14px 0 var(--ink);
+      }
+      .lost-code {
+        margin: 0;
+        color: var(--coral);
+        font-family: var(--mono);
+        font-size: 0.65rem;
+        font-weight: 800;
+        letter-spacing: 0.12em;
+      }
+      .lost h1 {
+        margin: 1.2rem 0;
+        font-family: var(--serif);
+        font-size: clamp(3.5rem, 12vw, 8rem);
+        font-weight: 500;
+        letter-spacing: -0.07em;
+        line-height: 0.9;
+      }
+      .lost p {
+        max-width: 560px;
+        color: var(--ink-soft);
+        font-family: var(--serif);
+        line-height: 1.8;
+      }
+      .lost .button {
+        margin-top: 1rem;
+        background: var(--ink);
+        color: var(--paper-bright);
+      }
+    </style>
+  </head>
+  <body>
+    <main class="lost">
+      <section class="lost-panel">
+        <p class="lost-code">ERROR / CONTEXT_NOT_FOUND</p>
+        <h1>404</h1>
+        <p>
+          这条路径失去了语境。回到首页，重新从意图开始解析。<br />
+          <span lang="en">This path has lost its context.</span>
+        </p>
+        <a class="button" href="/">
+          返回首页 <span>RESTORE CONTEXT ↗</span>
+        </a>
+      </section>
+    </main>
+  </body>
+</html>
